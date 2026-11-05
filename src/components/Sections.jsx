@@ -23,8 +23,29 @@ export const About = () => (
   </Section>
 )
 
+
+export const Education = () => (
+  <Section id="education" n="02" title="Education — where technology meets design">
+    <Reveal>
+      <div className="education-card">
+        <span className="education-label">UNDERGRADUATE</span>
+        <h3>{C.education.degree}</h3>
+        <p>{C.education.university}</p>
+
+        <div className="education-bottom">
+          <span>{C.education.minor}</span>
+          <strong>
+            {C.education.sgpa}
+            <small>{C.education.scale}</small>
+          </strong>
+        </div>
+      </div>
+    </Reveal>
+  </Section>
+)
+
 export const Works = () => (
-  <Section id="works" n="02" title="Selected works — my projects" tone="b">
+  <Section id="works" n="02" title="Selected work — my projects" tone="b">
     <div className="grid cards">
       {C.works.map((w, i) => (
         <Reveal key={w.title} delay={i * 90}>

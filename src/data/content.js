@@ -5,13 +5,24 @@ export const site = {
   tagRight: ['WHATEVER YOU DO,', 'DO IT WITH STYLE.'],
   socials: { behance: 'https://www.behance.net/connectwithvanshika', figma: 'https://www.figma.com/@celestialvx', github: 'https://github.com/connectwithvanshika', linkedin: 'https://www.linkedin.com/in/vanshika-y-a4702a304/' },
 }
+
 export const nav = [['about','About'],['works','Works'],['process','Process'],['tech','Tech'],['experience','Experience'],['personality','Personality'],['contact','Contact']]
+
+
+export const education = {
+  degree: 'B.Tech in Computer Science & Artificial Intelligence',
+  minor: 'Minor in Design ',
+  university: 'Newton School of Technology · Rishihood University',
+  sgpa: '8.2',
+  scale: ' / 10 SGPA',
+}
+
 export const about = {
   title: 'A little introduction',
   text: ["Hi, I'm Vanshika, a UI/UX designer who likes interfaces that feel obvious in the best way. I design mobile and web products, and I code enough to ship what I draw.",
          'I study computer science, which means I think about data, edge cases and states as much as colour and type.'],
   philosophy: 'Clear first, bold second. A good screen explains itself, then makes you smile.',
-  facts: [['2+','years designing'],['2','projects shipped'],['5','hackathons']],
+  facts: [['2+','years designing experience'],['2','projects shipped'],['5','hackathons']],
   interests: ['Mobile UI','Design systems','Data storytelling','Accessibility'],
 }
 export const works = [
