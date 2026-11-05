@@ -39,10 +39,68 @@ export const process = [
   ['Final design','Polished UI, a documented design system and developer handoff.'],
 ]
 export const tech = {
-  Design:['Figma','FigJam','Adobe XD','Illustrator', 'Framer','Canva'],
-  Languages:['Python','JavaScript','HTML & CSS','SQL','Java'],
-  Frameworks:['React','Vite','Tailwind','Flask','Pandas'],
-  Tools:['Git & GitHub','VS Code','Notion','Jupyter','Kaggle','Postman','MongoDB','ML','AI'],
+  Design: [
+    'Figma',
+    'Framer',
+    'Canva',
+    'Wireframing',
+    'Prototyping',
+    'Design Systems',
+    'User Research',
+    'Interaction Design',
+    'Visual Design',
+    'Information Architecture',
+    'Usability Testing'
+  ],
+
+  Languages: [
+    'Python',
+    'JavaScript',
+    'TypeScript',
+    'HTML & CSS',
+    'SQL',
+    'Assembly Language'
+  ],
+
+  Frameworks: [
+    'React',
+    'Vite',
+    'Node.js',
+    'Express.js',
+    'Pandas',
+    'NumPy',
+    'Scikit-learn',
+    'TensorFlow',
+    'PyTorch'
+  ],
+
+  Tools: [
+    'Git & GitHub',
+    'VS Code',
+    'Jupyter',
+    'Kaggle',
+    'Postman',
+    'MongoDB',
+    'MySQL',
+    'Firebase',
+    'Docker',
+    'Figma Dev Mode',
+    'Google Colab'
+  ],
+
+  'AI & Data': [
+    'Machine Learning',
+    'Deep Learning',
+    'Generative AI',
+    'Large Language Models (LLMs)',
+    'Retrieval-Augmented Generation (RAG)',
+    'Agentic AI',
+    'Natural Language Processing',
+    'Computer Vision',
+    'Data Analysis',
+    'Data Visualization',
+    'Prompt Engineering'
+  ]
 }
 export const experience = [
  {
