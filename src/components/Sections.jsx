@@ -36,7 +36,19 @@ export const Works = () => (
               <p>{w.blurb}</p>
               <p className="meta"><b>Role</b> {w.role}</p>
               <ul className="chips sm">{w.tools.map(t => <li key={t}>{t}</li>)}</ul>
-              <a className="link" href={w.demo} target="_blank" rel="noreferrer">View on Behance →</a>
+              <div className="project-links">
+    <div className="project-links">
+  <a className="link" href={w.demo} target="_blank" rel="noreferrer">
+    View on Behance →
+  </a>
+
+  {w.Figma && (
+    <a className="link" href={w.Figma} target="_blank" rel="noreferrer">
+      View on Figma →
+    </a>
+  )}
+</div>
+</div>
             </div>
           </article>
         </Reveal>
