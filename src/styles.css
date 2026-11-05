@@ -425,9 +425,15 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
 }
 
 .tech-icon {
-  font-size: 26px;
-  line-height: 1;
-  filter: drop-shadow(0 2px 4px rgba(75,75,200,0.2));
+  width: 24px;
+  height: 24px;
+  color: var(--ind);
+  flex-shrink: 0;
+}
+
+.tech-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .tech-label {
@@ -472,80 +478,6 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   color: #fff;
   border-color: var(--ind);
   transform: translateY(-2px) scale(1.04);
-}
-
-/* ── Cinnamoroll Easter Egg ───────────────────────── */
-.cinna-wrap {
-  position: fixed;
-  z-index: 9999;
-  width: 72px;
-  cursor: grab;
-  user-select: none;
-  touch-action: none;
-  transition: filter 0.2s;
-  animation: cinnaFloat 3s ease-in-out infinite;
-}
-
-.cinna-wrap:active,
-.cinna-drag { cursor: grabbing; animation: none; }
-
-.cinna-svg {
-  width: 72px;
-  height: 72px;
-  filter: drop-shadow(0 4px 12px rgba(100,160,220,0.4));
-  transition: transform 0.2s;
-}
-
-.cinna-wrap:hover .cinna-svg { transform: scale(1.1); }
-
-.cinna-bounce .cinna-svg {
-  animation: cinnaBounce 0.6s cubic-bezier(.36,.07,.19,.97) both;
-}
-
-@keyframes cinnaFloat {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-10px); }
-}
-
-@keyframes cinnaBounce {
-  0%,100% { transform: scale(1); }
-  20%     { transform: scale(1.3) rotate(-8deg); }
-  40%     { transform: scale(0.9) rotate(6deg); }
-  60%     { transform: scale(1.15) rotate(-4deg); }
-  80%     { transform: scale(0.95) rotate(2deg); }
-}
-
-.cinna-bubble {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  color: #3a3a9a;
-  font-size: 12px;
-  font-weight: 700;
-  white-space: nowrap;
-  padding: 7px 14px;
-  border-radius: 20px;
-  box-shadow: 0 4px 16px rgba(100,160,220,0.25);
-  border: 1.5px solid #c8e6f8;
-  pointer-events: none;
-  animation: bubblePop 0.3s cubic-bezier(.34,1.56,.64,1) both;
-}
-
-.cinna-bubble::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid transparent;
-  border-top-color: #fff;
-}
-
-@keyframes bubblePop {
-  from { opacity: 0; transform: translateX(-50%) scale(0.6); }
-  to   { opacity: 1; transform: translateX(-50%) scale(1); }
 }
 
 /* ── Sent confirmation card ───────────────────────── */
