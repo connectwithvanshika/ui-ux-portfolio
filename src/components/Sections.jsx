@@ -13,7 +13,7 @@ const projectImages = {
 
 
 export const About = () => (
-  <Section id="about" n="01" title="About me — a little introduction">
+  <Section id="about" n="01" title="About me">
     <div className="grid two">
       <Reveal>{C.about.text.map(t => <p className="lead" key={t}>{t}</p>)}
         <blockquote>{C.about.philosophy}</blockquote>
@@ -25,7 +25,7 @@ export const About = () => (
 
 
 export const Education = () => (
-  <Section id="education" n="02" title="Education — where technology meets design">
+  <Section id="education" n="02" title="Education">
     <Reveal>
       <div className="education-card">
         <span className="education-label">UNDERGRADUATE</span>
@@ -186,7 +186,7 @@ export function Contact() {
 
   const s = C.site.socials
   return (
-    <Section id="contact" n="07" title="Contact — let's make something happen">
+    <Section id="contact" n="07" title="Contact Here">
       <div className="grid two">
         <Reveal>
           <p className="lead">Have a project, an internship or just a hello? Write to me.</p>
