@@ -3,10 +3,14 @@ import Section from './Section.jsx'
 import Reveal from './Reveal.jsx'
 import { Behance, Linkedin, Figma, Github, IconDesign, IconLanguages, IconFrameworks, IconTools } from './Icons.jsx'
 import * as C from '../data/content.js'
-import nextfitImg from '../assets/nextfit.jpg'
-import verdaImg from '../assets/verda.jpg'
+import nextfitImg from '../assets/Modern Fitness App Mockups.png'
+import verdaImg from '../assets/Minimal Verda AI Plant Care.png'
 
-const projectImages = { nextfit: nextfitImg, verda: verdaImg }
+const projectImages = {
+  nextfit: nextfitImg,
+  verda: verdaImg,
+}
+
 
 export const About = () => (
   <Section id="about" n="01" title="About me — a little introduction">

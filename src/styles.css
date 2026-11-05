@@ -509,7 +509,7 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
 /* Project card */
 .card {
   width: 100%;
-  min-height: 0;
+  min-height: 450px;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   align-items: stretch;
