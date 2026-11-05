@@ -1,0 +1,52 @@
+// EDIT ME: all portfolio copy lives here.
+export const site = {
+  name: 'Vanshika', email: 'vanshika.connects@gmail.com',
+  tagLeft: 'Everyone shares the same ultimate fate. So why not live it up in style and bow out with flair?',
+  tagRight: ['WHATEVER YOU DO,', 'DO IT WITH STYLE.'],
+  socials: { behance: 'https://www.behance.net/connectwithvanshika', figma: 'https://www.figma.com/@celestialvx', github: 'https://github.com/connectwithvanshika', linkedin: 'https://www.linkedin.com/in/vanshika-y-a4702a304/' },
+}
+export const nav = [['about','About'],['works','Works'],['process','Process'],['tech','Tech'],['experience','Experience'],['personality','Personality'],['contact','Contact']]
+export const about = {
+  title: 'A little introduction',
+  text: ["Hi, I'm Vanshika, a UI/UX designer who likes interfaces that feel obvious in the best way. I design mobile and web products, and I code enough to ship what I draw.",
+         'I study computer science, which means I think about data, edge cases and states as much as colour and type.'],
+  philosophy: 'Clear first, bold second. A good screen explains itself, then makes you smile.',
+  facts: [['2+','years designing'],['2','projects shipped'],['5','hackathons']],
+  interests: ['Mobile UI','Design systems','Data storytelling','Accessibility'],
+}
+export const works = [
+  { title:'NextFit', role:'Lead UI/UX Designer', year:'2026', tools:['Figma','FigJam','Principle'], blurb:'A fitness and wellness app with guided plans, streaks and a calm progress dashboard.', demo:'https://www.behance.net/gallery/256064835/NextFit', colors:['#4b4bc8','#e8a0cc'], img:'nextfit' },
+  { title:'Verda', role:'Product Designer', year:'2025', tools:['Figma','React' , 'AI ML'], blurb:'A student marketplace with verified sellers, quick chat and a three-tap listing flow.', demo:'https://www.behance.net/gallery/257968943/Verda-AI-Powered-Plant-Care-Platform', colors:['#2f7de1','#a9d8f8'], img:'verda' }
+]
+export const process = [
+  ['Research','Interviews, surveys and competitor audits to find the real problem.'],
+  ['Ideate','Sketches, user flows and crazy-eights until one idea survives.'],
+  ['Wireframe','Low-fidelity layouts that test structure before style.'],
+  ['Prototype','Clickable Figma flows tested with five real people.'],
+  ['Final design','Polished UI, a documented design system and developer handoff.'],
+]
+export const tech = {
+  Design:['Figma','FigJam','Adobe XD','Illustrator', 'Framer','Canva'],
+  Languages:['Python','JavaScript','HTML & CSS','SQL','Java'],
+  Frameworks:['React','Vite','Tailwind','Flask','Pandas'],
+  Tools:['Git & GitHub','VS Code','Notion','Jupyter','Kaggle','Postman','MongoDB','ML','AI'],
+}
+export const experience = [
+ {
+    when: '2026',
+    title: 'Software Development Engineer Intern',
+    org: '6D Technologies',
+    text: 'Working with the Development - Messaging team, contributing to software development and exploring real-world telecom systems, messaging technologies, and engineering workflows.'
+  },
+  {
+    when: '2026',
+    title: 'Delegate — Asia Conference',
+    org: 'Harvard Project for Asian and International Relations (HPAIR)',
+    text: 'Selected to participate in an international conference bringing together students and young leaders to exchange perspectives on global challenges, innovation, leadership, and international affairs.'
+  }
+]
+export const personality = {
+  intro:"Off the clock I'm usually chasing a good colour palette.",
+  facts:['I name every Figma file after a song','Badminton is my kind of cardio', 'I love painting and making crafts', 'I Journal every special moment'],
+  hobbies:['Photography','The Weeknd on repeat','Anime marathons','Cappuccino dates '],
+}
