@@ -167,7 +167,7 @@ export function Contact() {
 
     setSending(true)
     try {
-      const res = await fetch('https://formspree.io/f/xwpbgkve', {
+      const res = await fetch('https://formspree.io/f/xvkkngrd', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ name: f.name, email: f.email, message: f.message, _replyto: f.email }),
