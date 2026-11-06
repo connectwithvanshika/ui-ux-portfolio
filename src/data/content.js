@@ -1,6 +1,6 @@
 // EDIT ME: all portfolio copy lives here.
 export const site = {
-  name: 'Vanshika Yadav', email: 'vanshika.connects@gmail.com',
+  name: 'Vanshika', email: 'vanshika.connects@gmail.com',
   tagLeft: 'Everyone shares the same ultimate fate. So why not live it up in style and bow out with flair?',
   tagRight: ['WHATEVER YOU DO,', 'DO IT WITH STYLE.'],
   socials: { behance: 'https://www.behance.net/connectwithvanshika', figma: 'https://www.figma.com/@celestialvx', github: 'https://github.com/connectwithvanshika', linkedin: 'https://www.linkedin.com/in/vanshika-y-a4702a304/' },
