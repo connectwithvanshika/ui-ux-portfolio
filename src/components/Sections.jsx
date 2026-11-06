@@ -5,10 +5,12 @@ import { Behance, Linkedin, Figma, Github, IconDesign, IconLanguages, IconFramew
 import * as C from '../data/content.js'
 import nextfitImg from '../assets/Modern Fitness App Mockups.png'
 import verdaImg from '../assets/Minimal Verda AI Plant Care.png'
+import evore from '../assets/evore.png'
 
 const projectImages = {
   nextfit: nextfitImg,
   verda: verdaImg,
+  evore:evore
 }
 
 

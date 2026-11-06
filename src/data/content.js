@@ -26,9 +26,18 @@ export const about = {
   interests: ['Mobile UI','Design systems','Data storytelling','Accessibility'],
 }
 export const works = [
+  {
+  title: 'ÉVORÉ',
+  role: ': Brand & UI/UX Designer',
+  year: '2026',
+  tools: ['Figma'],
+  blurb: 'A luxury jewellery brand website blending sculptural designs, editorial aesthetics and timeless elegance through a refined digital shopping experience.',
+  demo : 'https://www.behance.net/gallery/258140579/EVORE-A-Contemporary-Luxury-Jewellery-Experience',
+  Figma : 'https://www.figma.com/design/8ekrUehAUmlLGfUvHcVrSG/%C3%89VOR%C3%89?node-id=3-2&t=0cahQAuyRoJmFQjW-1',
+  colors: ['#f8f3ed', '#cbb69b', '#b58a45'],
+  img: 'evore'
+},
   { title:'NextFit', role:': Lead UI/UX Designer', year:'2026', tools:['Figma'], blurb:'A fitness and wellness app with guided plans, streaks and a calm progress dashboard.', demo:'https://www.behance.net/gallery/256064835/NextFit', Figma: 'https://www.figma.com/design/lD4mPzz9TQyEo4lSXNfAsN/Healthcare-App?node-id=0-1&t=RJvsyqClzyIJk64c-1', colors:['#4b4bc8','#e8a0cc'], img:'nextfit' },
-
-
   { title:'Verda', role:': Lead UI/UX Designer', year:'2026', tools:['Figma','React','AI ML'], blurb:'An AI-powered plant care platform that helps users identify plant health issues, diagnose diseases, and receive personalised care recommendations to keep their plants healthy and thriving.', demo:'https://www.behance.net/gallery/257968943/Verda-AI-Powered-Plant-Care-Platform',Figma : 'https://www.figma.com/design/zmGr3lNZk6gV7NCnNSh6Qt/Verda?node-id=0-1&t=tAW6vqC6MhafETWP-1',  colors:['#2f7de1','#a9d8f8'], img:'verda' }
 ]
 export const process = [
