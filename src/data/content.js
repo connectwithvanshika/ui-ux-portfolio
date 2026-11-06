@@ -1,6 +1,6 @@
 // EDIT ME: all portfolio copy lives here.
 export const site = {
-  name: 'Vanshika', email: 'vanshika.connects@gmail.com',
+  name: 'Vanshika Yadav', email: 'vanshika.connects@gmail.com',
   tagLeft: 'Everyone shares the same ultimate fate. So why not live it up in style and bow out with flair?',
   tagRight: ['WHATEVER YOU DO,', 'DO IT WITH STYLE.'],
   socials: { behance: 'https://www.behance.net/connectwithvanshika', figma: 'https://www.figma.com/@celestialvx', github: 'https://github.com/connectwithvanshika', linkedin: 'https://www.linkedin.com/in/vanshika-y-a4702a304/' },
@@ -19,7 +19,7 @@ export const education = {
 
 export const about = {
   title: 'A little introduction',
-  text: ["Hi, I'm Vanshika, a UI/UX designer who likes interfaces that feel obvious in the best way. I design mobile and web products, and I code enough to ship what I draw.",
+  text: ["Hi, I'm Vanshika Yadav, a UI/UX designer who likes interfaces that feel obvious in the best way. I design mobile and web products, and I code enough to ship what I draw.",
          'I study computer science, which means I think about data, edge cases and states as much as colour and type.'],
   philosophy: 'Clear first, bold second. A good screen explains itself, then makes you smile.',
   facts: [['2+','years designing experience'],['2','projects shipped'],['5','hackathons']],
