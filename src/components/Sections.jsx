@@ -7,6 +7,7 @@ import nextfitImg from '../assets/Modern Fitness App Mockups.png'
 import verdaImg from '../assets/Minimal Verda AI Plant Care.png'
 import evore from '../assets/evore.png'
 import dashboard from '../assets/Dashboard.png';
+import airlineDashboard from '../assets/fuel&cost_impact.png';
 
 const projectImages = {
   nextfit: nextfitImg,
@@ -316,6 +317,101 @@ export function OtherProjects() {
 
         </div>
       </article>
+
+
+
+
+{/* SECOND PROJECT — AIRLINE ANALYTICS */}
+
+<article className="featured-data-project">
+
+  <div className="featured-project-image">
+    <img
+      src={airlineDashboard}
+      alt="Airline Ticket Prices vs Fuel Costs Dashboard"
+    />
+
+    <a
+      href="https://github.com/connectwithvanshika/C_G18_AirlineTicketPricesVsFuelCostsAnalysis"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="github-project-button"
+    >
+      View on GitHub ↗
+    </a>
+  </div>
+
+  <div className="featured-project-info">
+
+    <div className="featured-project-heading">
+      <h3>
+        Airline Ticket Prices
+        <br />
+        vs Fuel Costs Analysis
+      </h3>
+      <span>2026</span>
+    </div>
+
+    <p>
+      An aviation analytics project investigating how global
+      fuel price fluctuations influence airline ticket fares
+      and fuel surcharges. Integrating six aviation and
+      macroeconomic datasets, the project combines ETL,
+      exploratory analysis, statistical modelling, forecasting
+      and interactive Tableau dashboards to uncover pricing
+      patterns across different market phases.
+    </p>
+
+    <div className="project-role">
+      <strong>Role :</strong> Project Lead · Statistical Analysis
+    </div>
+
+    <div className="project-tools">
+      {[
+        'Python',
+        'Pandas',
+        'NumPy',
+        'ARIMA',
+        'K-Means',
+        'Statistical Analysis',
+        'Tableau'
+      ].map(tool => (
+        <span key={tool}>{tool}</span>
+      ))}
+    </div>
+
+    <div className="project-highlights">
+      <div>
+        <strong>6</strong>
+        <span>Integrated Datasets</span>
+      </div>
+
+      <div>
+        <strong>0.28</strong>
+        <span>Fuel-Fare Correlation</span>
+      </div>
+
+      <div>
+        <strong>0.08</strong>
+        <span>Regression R²</span>
+      </div>
+    </div>
+
+    <a
+      href="https://github.com/connectwithvanshika/C_G18_AirlineTicketPricesVsFuelCostsAnalysis"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-link"
+    >
+      Explore Repository →
+    </a>
+
+  </div>
+</article>
+
     </Section>
   );
 }
+
+
+

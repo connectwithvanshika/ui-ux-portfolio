@@ -609,6 +609,10 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
 
 
 
+/* =================================
+   OTHER PROJECTS — FEATURED CARDS
+================================= */
+
 .featured-data-project {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -617,12 +621,23 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   border-radius: 26px;
   overflow: hidden;
   background: var(--panel, #f1dfef);
+  margin-bottom: 30px;
+  align-items: stretch;
 }
 
-/* Image container */
+/* Add breathing room between cards */
+
+.featured-data-project + .featured-data-project {
+  margin-top: 30px;
+}
+
+/* =================================
+   PROJECT IMAGE
+================================= */
 
 .featured-project-image {
   position: relative;
+  width: 100%;
   min-width: 0;
   min-height: 455px;
   background: #e9e4e0;
@@ -633,13 +648,14 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
 }
 
 .featured-project-image img {
-  width: 100%;
-  height: 100%;
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: center;
   padding: 12px;
+  display: block;
 }
 
 /* GitHub button */
@@ -651,22 +667,26 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   z-index: 2;
   padding: 12px 20px;
   background: #fff;
-  color: #333;
+  color: #252525;
   border-radius: 30px;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .github-project-button:hover {
   background: #252525;
   color: white;
+  transform: translateY(-3px);
 }
 
-/* Right content */
+/* =================================
+   PROJECT INFORMATION
+================================= */
 
 .featured-project-info {
+  min-width: 0;
   padding: 45px 40px;
   display: flex;
   flex-direction: column;
@@ -677,13 +697,15 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 15px;
+  margin-bottom: 18px;
 }
 
 .featured-project-heading h3 {
   font-size: 24px;
-  line-height: 1.35;
-  margin: 0 0 18px;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: -0.5px;
 }
 
 .featured-project-heading span {
@@ -708,7 +730,9 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   color: var(--accent, #5146d8);
 }
 
-/* Tools */
+/* =================================
+   TECHNOLOGY TAGS
+================================= */
 
 .project-tools {
   display: flex;
@@ -722,12 +746,16 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   border: 1px solid var(--accent, #5146d8);
   border-radius: 30px;
   font-size: 11px;
+  white-space: nowrap;
 }
 
-/* Highlights */
+/* =================================
+   PROJECT STATISTICS
+================================= */
 
 .project-highlights {
   display: flex;
+  flex-wrap: wrap;
   gap: 45px;
   margin-bottom: 25px;
 }
@@ -747,7 +775,9 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   opacity: 0.7;
 }
 
-/* Repository link */
+/* =================================
+   REPOSITORY LINK
+================================= */
 
 .featured-project-info .project-link {
   align-self: flex-start;
@@ -756,24 +786,85 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 5px;
+  transition: opacity 0.3s ease;
 }
 
-/* Mobile */
+.featured-project-info .project-link:hover {
+  opacity: 0.6;
+}
 
-@media (max-width: 750px) {
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
   .featured-data-project {
-    grid-template-columns: 1fr;
-  }
-
-  .featured-project-image {
-    min-height: 300px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .featured-project-info {
-    padding: 28px 22px;
+    padding: 30px 25px;
   }
 
   .featured-project-heading h3 {
     font-size: 21px;
+  }
+
+  .project-highlights {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .featured-data-project {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .featured-project-image {
+    min-height: 320px;
+  }
+
+  .featured-project-image img {
+    padding: 10px;
+  }
+
+  .featured-project-info {
+    padding: 30px 22px;
+  }
+
+  .featured-project-heading h3 {
+    font-size: 21px;
+  }
+
+  .featured-project-info p {
+    font-size: 14px;
+  }
+
+  .project-highlights {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .featured-project-image {
+    min-height: 250px;
+  }
+
+  .featured-project-info {
+    padding: 25px 18px;
+  }
+
+  .featured-project-heading h3 {
+    font-size: 19px;
+  }
+
+  .project-tools {
+    gap: 8px;
+  }
+
+  .project-highlights {
+    gap: 22px;
   }
 }

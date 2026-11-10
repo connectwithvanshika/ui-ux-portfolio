@@ -6,5 +6,5 @@ import {
   Tech, Experience, Personality, Contact
 } from './components/Sections.jsx'
 export default function App() {
-  return (<><Analytics/><Nav/><main><Hero/><About/><Education/><Works/><OtherProjects /><Process/><Tech/><Experience/><Personality/><Contact/></main></>)
+  return (<><Analytics/><Nav/><main><Hero/><About/><Education/><Works/><OtherProjects/><Process/><Tech/><Experience/><Personality/><Contact/></main></>)
 }
