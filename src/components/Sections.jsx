@@ -147,7 +147,13 @@ export const Personality = () => (
       <Reveal delay={100}><div className="panel"><h3>Hobbies</h3><ul className="chips">{C.personality.hobbies.map(h => <li key={h}>{h}</li>)}</ul></div></Reveal>
     </div>
   </Section>
+
+
 )
+
+
+
+
 
 export function Contact() {
   const [f, setF] = useState({ name: '', email: '', message: '' })
