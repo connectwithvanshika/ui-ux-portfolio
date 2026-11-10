@@ -6,6 +6,7 @@ import * as C from '../data/content.js'
 import nextfitImg from '../assets/Modern Fitness App Mockups.png'
 import verdaImg from '../assets/Minimal Verda AI Plant Care.png'
 import evore from '../assets/evore.png'
+import dashboard from '../assets/Dashboard.png';
 
 const projectImages = {
   nextfit: nextfitImg,
@@ -229,3 +230,120 @@ export function Contact() {
     </Section>
   )
 }
+
+
+
+
+
+
+export function OtherProjects() {
+  return (
+    <section id="other-projects" className="other-projects">
+
+      <div className="section-heading">
+        <span className="eyebrow">BEYOND THE INTERFACE / DATA ANALYTICS</span>
+        <h2>Other Projects<span>.</span></h2>
+        <p>
+          Exploring data, uncovering patterns and turning
+          complex information into meaningful insights.
+        </p>
+      </div>
+
+      <article className="featured-data-project">
+
+        {/* Project Image */}
+        <div className="featured-project-image">
+
+          <img
+            src={dashboard}
+            alt="Maternal and newborn health analytics dashboard"
+          />
+
+          <div className="featured-image-overlay">
+            <span className="featured-label">
+              FEATURED DATA PROJECT · 2026
+            </span>
+
+            <a
+              href="https://github.com/connectwithvanshika/SectionC_Group6_Pregnant_Women_COVID19"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github-project-button"
+            >
+              View on GitHub <span>↗</span>
+            </a>
+          </div>
+
+        </div>
+
+        {/* Project Information */}
+        <div className="featured-project-info">
+
+          <div className="featured-project-heading">
+            <div>
+              <span className="project-category">
+                HEALTHCARE · DATA VISUALIZATION · ANALYTICS
+              </span>
+
+              <h3>
+                Impact of COVID-19 on
+                <br />
+                Maternal & Newborn Health
+              </h3>
+            </div>
+
+            <span className="project-date">2026</span>
+          </div>
+
+          <p className="featured-project-description">
+            A data-driven analysis of the impact of the COVID-19
+            pandemic on maternal mental health and neonatal
+            outcomes. Exploring pregnancy-related anxiety,
+            pandemic stress, preterm births and NICU admissions
+            through data cleaning, exploratory analysis and
+            interactive dashboards.
+          </p>
+
+          <div className="project-highlights">
+            <div>
+              <strong>5,389</strong>
+              <span>Cleaned Records</span>
+            </div>
+
+            <div>
+              <strong>20</strong>
+              <span>Features</span>
+            </div>
+
+            <div>
+              <strong>9.78%</strong>
+              <span>NICU Admission Rate</span>
+            </div>
+
+            <div>
+              <strong>19.4%</strong>
+              <span>Preterm Birth Rate</span>
+            </div>
+          </div>
+
+          <div className="featured-project-tools">
+            {[
+              'Google Sheets',
+              'Pivot Tables',
+              'Data Cleaning',
+              'EDA',
+              'Data Visualization',
+              'Dashboard Design'
+            ].map(tool => (
+              <span key={tool}>{tool}</span>
+            ))}
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+  );
+}
+
