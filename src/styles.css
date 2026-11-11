@@ -14,6 +14,9 @@ a{color:inherit}ul,ol{list-style:none;padding:0}
 .menu a{font-family:var(--disp);font-size:clamp(40px,8vw,84px);color:var(--ind);text-decoration:none;text-transform:uppercase;opacity:0;transform:translateY(20px);transition:.5s,color .2s}
 .menu.open a{opacity:1;transform:none}.menu a:hover{color:var(--ink);letter-spacing:.04em}
 .hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;background:linear-gradient(180deg,#a9d8f8 0%,#b9c3ea 50%,#e8a0cc 100%)}
+.hero-three-wrapper{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:hidden;animation:threeFadeIn 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes threeFadeIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
+.hero-three-fallback{position:absolute;right:14%;top:32%;width:clamp(140px,20vw,240px);height:clamp(140px,20vw,240px);border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.9) 0%,rgba(185,195,234,.6) 45%,rgba(75,75,200,.3) 90%);filter:blur(8px);pointer-events:none}
 .hero-name{position:absolute;left:5%;width:90%;top:max(17%,100px);fill:var(--ind);z-index:1}
 .hero-img{position:absolute;z-index:2;bottom:0;left:50%;transform:translateX(-50%);height:63%;max-width:90%;object-fit:contain;object-position:bottom}
 .hero p{position:absolute;z-index:3;font-weight:500;font-size:clamp(14px,1.15vw,19px);line-height:1.35}
@@ -62,8 +65,6 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
  .hero-social{left:6%;bottom:5%}.star{right:6%;bottom:5%}}
 @media(max-width:520px){.timeline li{grid-template-columns:1fr;gap:6px}.hero-left,.hero .hero-right{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none}}
-
-
 
 /* NAVIGATION BAR */
 

@@ -1,10 +1,17 @@
+import React, { lazy, Suspense } from 'react'
 import { site } from '../data/content.js'
 import portrait from '../assets/portrait.png'
 import { Behance, Linkedin, Figma, Github } from './Icons.jsx'
+
+const ThreeScene = lazy(() => import('./ThreeScene.jsx'))
+
 export default function Hero() {
   const s = site.socials
   return (
     <section id="home" className="hero">
+      <Suspense fallback={<div className="hero-three-wrapper" aria-hidden="true"><div className="hero-three-fallback" /></div>}>
+        <ThreeScene />
+      </Suspense>
       <svg className="hero-name" viewBox="0 0 1260 300" role="img" aria-label={site.name} preserveAspectRatio="xMidYMid meet">
         <text x="0" y="292" fontSize="392" textLength="1255" lengthAdjust="spacingAndGlyphs">{site.name.toUpperCase()}</text>
       </svg>
