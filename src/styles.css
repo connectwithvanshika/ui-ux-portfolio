@@ -96,6 +96,65 @@ blockquote{font-family:var(--disp);color:var(--ind);font-size:clamp(24px,3vw,36p
   color: #ee80c6;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(75, 75, 200, 0.08);
+  border: 1px solid rgba(50, 50, 160, 0.35);
+  padding: 12px 18px;
+  border-radius: 50px;
+  color: #2424a8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.resume-btn:hover {
+  background: #3030b5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(48, 48, 181, 0.25);
+  border-color: #3030b5;
+}
+
+.resume-btn .download-icon {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.resume-btn:hover .download-icon {
+  transform: translateY(2px);
+}
+
+@media (max-width: 520px) {
+  .topbar-actions {
+    gap: 8px;
+  }
+  .resume-btn {
+    padding: 10px 14px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    gap: 6px;
+  }
+  .resume-btn .download-icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 .menu-trigger {
   display: flex;
   align-items: center;
